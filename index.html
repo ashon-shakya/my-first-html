@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with :nth-child</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+            /* Light gray background for even rows */
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+            /* White background for odd rows */
+        }
+
+        tr:nth-child(1) {
+            background-color: #cccccc;
+            /* Different background for the first row */
+        }
+
+        tr:nth-child(3n) {
+            color: red;
+            /* Red text color for every third row */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Table with :nth-child Selector</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>30</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>25</td>
+            <td>Los Angeles</td>
+        </tr>
+        <tr>
+            <td>Mike Johnson</td>
+            <td>35</td>
+            <td>Chicago</td>
+        </tr>
+        <tr>
+            <td>Emily Davis</td>
+            <td>28</td>
+            <td>Houston</td>
+        </tr>
+        <tr>
+            <td>Chris Brown</td>
+            <td>40</td>
+            <td>Phoenix</td>
+        </tr>
+        <tr>
+            <td>Alice Green</td>
+            <td>22</td>
+            <td>Philadelphia</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+</html>
